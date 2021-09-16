@@ -111,4 +111,8 @@ AHRS.prototype.getEulerAnglesDegrees = function getEulerAnglesDegrees() {
   };
 };
 
+AHRS.prototype.setBeta = function setBeta(beta = 0.4) {
+  this.setBeta(beta)
+}
+
 module.exports = AHRS;

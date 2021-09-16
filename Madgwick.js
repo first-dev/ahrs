@@ -252,7 +252,7 @@ module.exports = function Madgwick(sampleInterval, options) {
 
   return {
     update: madgwickAHRSUpdate,
-    setBeta(b) { beta = b; },
+    setBeta(b = 0.4) { beta = b; },
     getQuaternion() {
       return {
         w: q0,
